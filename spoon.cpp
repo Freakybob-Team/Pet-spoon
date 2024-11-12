@@ -83,3 +83,4 @@ void adoption() {
         
     }
     
+// me dum dum and forgot to add the rest of the code Greg, I was also rushed at school cause I didn't wanna get in trouble grrg
