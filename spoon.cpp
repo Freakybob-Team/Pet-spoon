@@ -66,65 +66,20 @@ void adoption() {
         std::string foodbuy;
         std::string anything_else_option;
         std::cout << "\n\nWelcome to the Spoon pet shop! This place will have everything you'll ever need to take care of your spoon! We also have a deal on so it's your lucky day!\n\n";
-        std::cout << "We'll start off by buying some food for your pet spoon.\n\n";
+        std::cout << "We'll start off by buying some food for your pet spoon. Buy all of them by typing '1 2 3'\n\n";
         std::cout << "School pizza(1)      Bread(2)       Watermelon(3)\n";
         std::cout << "     $3            $1             $3            \n";
+        
         std::cin >> foodbuy;
-        if (foodbuy == "1") {
-            std::cout  << "You have bought a slice of school pizza!\n";
-            money = moneybefore - 3;
+        if (foodbuy == "1 2 3") {
+            std::cout  << "You have bought a slice of school pizza, Bread, Wathermelon!\n";
+            money = moneybefore - 7;
             std::cout << "You now have $" << money << " left!";
             
         }
-        if (foodbuy == "2") {
-            std::cout  << "You have bought a slice of school pizza!\n";
-            money = moneybefore - 1;
-            std::cout << "You now have $" << money << " left!";
-        }
-        std::cout << "\nanything else? It's recomended that you buy all 3 supplies! (Yes or No)\n";
-        std::cin >> anything_else_option;
-        if (anything_else_option == "Yes" || anything_else_option == "yes") {
-            std::cout << "\n\nBread(1)       Watermelon(2)\n";
-        std::cout << "  $1                $3\n";
-        std::cin >> foodbuy;
-         if (foodbuy == "1") {
-            std::cout  << "You have bought a slice of Bread!\n";
-            money = moneybefore - 1;
-            std::cout << "You now have $" << money << " left!";
-        }
-        if (foodbuy == "2") {
-            std::cout << ""
-        }
-        }
+        
+       
         
         
     }
     
-         
-     
-int main() {
-std::string what;
-std::string ok;
-
-
-// this is spoon. cause spon is gref
-    std::cout << " SSSSS   PPPPP   OOO   OOO   N   N " << std::endl;
-    std::cout << "S         P   P  O   O O   O  NN  N " << std::endl;
-    std::cout << " SSSSS    PPPPP  O   O O   O  N N N " << std::endl;
-    std::cout << "     S    P      O   O O   O  N  NN " << std::endl;
-    std::cout << " SSSSS    P       OOO   OOO   N   N \n" << std::endl;
-    
-    std::cout << "Welcome to Spoon. Say info for what Spoon  is about.\nSay anything else to continue on your adventure of taking care of a spoon rgeg\n";
-    std::cin >> what;
-   if (what == "info" || what == "Info" || what == "INFO") {
-       std::cout << "You're gonna take care of a spoon\n";
-       std::cin >> ok;
-      adoption();
-   }
-   else {
-       adoption();
-   }
-    viewingarea();
-    store_at_start();
-    return 0;
-}
