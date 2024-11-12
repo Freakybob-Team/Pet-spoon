@@ -6,7 +6,7 @@ def cls():
 def eat():
     print("Oh no! " + name + " is hungry!")
     food = input("You currently have 1 'PH'! Would you like to feed them this?")
-    if ("PH" in food):
+    if ("Yes" in food):
         print(name + " is happy!")
 print("Welcome to FORK")
 print("SPOON EXPANSION PACK")

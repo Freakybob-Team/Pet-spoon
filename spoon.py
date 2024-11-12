@@ -1,5 +1,15 @@
 import time
+import os
+import os.path
 def spoon():
+    if (os.path.exists("fork.txt") == True):
+        command = input("Would you like to run any commands? If not, just hit enter! ")
+    if (command == "fork"):
+        print("Whoa! A fork appears in front of you. It wants to be.. your friend?")
+        forkac = input("Do you accept it as your pet? (this will delete your existing pet) ")
+        if ("Yes" in forkac):
+            print("You have given your current pet back to the adoption shelter. Fork is now your pet!")
+            sname = input("What would you like to name your new fork? ")
     food = input(sname + " is hungry! What would you like to feed them? (you have: Freakyina, Frito, M) ")
     if (food == "M"):
         print("Ew! " + sname + " hated it!")
@@ -27,4 +37,6 @@ if (name == "greg"):
 sname = input("We have a spoon in store for you, " + name + "!" + " What would you like to name it? ")
 print("Spoon has remembered this.")
 print("Alright! " + sname + " is ready for you!")
+if (os.path.exists("fork.txt") == True):
+    print("Oh! I almost forgot! You can run 'fork' to get a special pet! Off you go!")
 spoon()
