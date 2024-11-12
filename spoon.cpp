@@ -76,8 +76,12 @@ void adoption() {
             std::cout << "You now have $" << money << " left!";
             
         }
-        std::cout << "\nanything else?";
+        std::cout << "\nanything else? It's recomended that you buy all 3 supplies! (Yes or No)\n";
         std::cin >> anything_else_option;
+        if (anything_else_option == "Yes" || anything_else_option == "yes") {
+            std::cout << "\n\nBread(1)       Watermelon(3)\n";
+        std::cout << "  $1                $3\n";
+        }
         
         
     }
