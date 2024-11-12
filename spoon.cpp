@@ -77,16 +77,24 @@ void adoption() {
             
         }
         if (foodbuy == "2") {
-            td::cout  << "You have bought a slice of school pizza!\n";
+            std::cout  << "You have bought a slice of school pizza!\n";
             money = moneybefore - 1;
             std::cout << "You now have $" << money << " left!";
         }
-        
         std::cout << "\nanything else? It's recomended that you buy all 3 supplies! (Yes or No)\n";
         std::cin >> anything_else_option;
         if (anything_else_option == "Yes" || anything_else_option == "yes") {
             std::cout << "\n\nBread(1)       Watermelon(2)\n";
         std::cout << "  $1                $3\n";
+        std::cin >> foodbuy;
+         if (foodbuy == "1") {
+            std::cout  << "You have bought a slice of Bread!\n";
+            money = moneybefore - 1;
+            std::cout << "You now have $" << money << " left!";
+        }
+        if (foodbuy == "2") {
+            std::cout << ""
+        }
         }
         
         
