@@ -3,7 +3,8 @@
 void adoption() {
     std::string username;
     std::cout << "\n-------------------------------------------------------\n";
-    std::cout << "Welcome to the spoon adoption place greg. Wait, You're not greg, what is your name, random person?\n";
+    std::cout << "Dominiac: Welcome to the spoon adoption place, I am the granpapa of all the\nspoons here, greg. Wait, You're not greg, what is your name, random person?\n";
+    std::cout << "You: ";
        std::cin >> username;
        if (username == "Greg" || username == "greg") {
            std::cout << "oh, so you are greg, mb\n";
@@ -274,7 +275,11 @@ if (foodbuy == "all" || foodbuy == "All") {
                     tutoriel();
                 }
                 std::cout << "-------------------------------------------------------\n";
+                
             }
+            void game() {
+                
+                }
             
 
     int main() {
@@ -294,7 +299,8 @@ std::string ok;
     std::cin >> what;
    if (what == "info" || what == "Info" || what == "INFO") {
     std::cout << "-------------------------------------------------------";
-       std::cout << "\nThis game is about taking care of a pet spoon. Don't ask why cause like, it's very useful lmao\nSome stuff that is going to be updated in later updates:\n\nA saving system\nRandom events when you like use the command 'Check' or something\nRandom cool stuff\n";
+       std::cout << "\nThis game is about taking care of a pet spoon. Don't ask why cause like, it's very useful lmao\nSome stuff that is going to be updated in later updates:\n\nA saving system\nRandom events when you like use the command 'Check' or something\nRandom cool stuff\nDo You want to know some bugs that have been found? (Say 'Bugs')\n";
+       
        std::cin >> ok;
        if (ok == "why" || ok == "Why") {
         std::cout << "I just said to not ask vro\n\n";
@@ -305,6 +311,9 @@ std::string ok;
    }
    if (what == "No" || what == "no") {
     std::cout << "Ok, geez";
+   }
+   if (ok == "Bugs" || ok == "bugs") {
+       std::cout << "\nNot knowing how to carry 'spoonname' through other 'voids'\nIf you spam the game, it'll bug out lmao\nThat's all we really know greg\n";
    }
    adoption();   
     viewingarea();
