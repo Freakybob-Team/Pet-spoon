@@ -3,7 +3,7 @@
 void adoption() {
     std::string username;
     std::cout << "\n-------------------------------------------------------\n";
-    std::cout << "Dominiac: Welcome to the spoon adoption place, I am the granpapa of all the\nspoons here, greg. Wait, You're not greg, what is your name, random person?\n";
+    std::cout << "Dominic: Welcome to the spoon adoption place, I am the granpapa of all the\nspoons here, greg. Wait, You're not greg, what is your name, random person?\n";
     std::cout << "You: ";
        std::cin >> username;
        if (username == "Greg" || username == "greg") {
