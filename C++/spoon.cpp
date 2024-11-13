@@ -14,6 +14,7 @@ void adoption() {
            std::cout << "K, so " << username << ", let's take you over to the spoon viewing area so you can check out the pet spoons";
        }
      }
+
      void viewingarea() {
          std::string spoonname;
          std::string buy;
@@ -118,31 +119,132 @@ if (foodbuy == "all" || foodbuy == "All") {
          std::cout << "-------------------------------------------------------";
         std::cout << "\nCongrats! You have everything you'll need for your pet spoon! The Store is always open for you to buy more supplies!\nI hope you enjoy your time as a new spoon owner!!";
     }
-    void game() {
+    void tutoriel() {
         std::string spoonname;
         std::string call_tot;
+        std::string options;
+        std::string food_options;
+        std::string feed;
+        
+
+
          std::cout << "\n-------------------------------------------------------";
-          std::cout << "\nYou have brought your spoon home! While we let her explore the house, we need to give her a name!\nWhat should their name be?\n";
+          std::cout << "\nYou have brought your spoon home! While she explores the house, you need to give her a name!\nWhat should their name be?\n";
           std::cin >> spoonname;
           std::cout << "\nYour spoon has been named " << spoonname << "!\n";
           std::cout << "-------------------------------------------------------\n";
           std::cout << spoonname << " walks around her new house.\n";
+        // learning how to call your spoon regegege 
+          std::cout << "-------------------------------------------------------\n";
           std::cout << "You can call your spoon over by typing '" << spoonname << "'! Try it out!\n";
+          std::cout << "-------------------------------------------------------\n";
           std::cin >> call_tot;
           std::cout << "\n";
           if (call_tot == spoonname) {
             std::cout << spoonname << " walked over to you!\n";
+            std::cout << "-------------------------------------------------------\n";
+            std::cout << "Good job! Now that we know how to call our spoon, let's learn how to feed our spoon!\n";
           }
           else {
+            std::cout << "-------------------------------------------------------\n";
             std::cout << "Remember, you have to call your spoon by typing '" << spoonname << "'\n";
+            std::cout << "-------------------------------------------------------\n";
             std::cin >> call_tot;
             std::cout << "\n";
             if (call_tot == spoonname) {
               std::cout << spoonname << " walked over to you!\n";
             }
+            std::cout << "Good job! Now that we know how to call our spoon, let's learn how to feed our spoon!\n";
+            std::cout << "-------------------------------------------------------\n";
           }
-          
-    }
+        // learning how to feed  
+          std::cout << "-------------------------------------------------------\n";
+          std::cout << "To give food to your spoon, you would call your spoon like normal but you would type 'Feed'! Try it out!\n";
+          std::cout << "-------------------------------------------------------\n";
+          std::cin >> call_tot;
+          if (call_tot == spoonname) {
+            std::cout << spoonname << " walks up to you!\n";
+          }
+          else {
+              std::cout << "-------------------------------------------------------\n";
+              std::cout << "Remember, you have to call your spoon by typing '" << spoonname << "' and then say 'Feed'!\n";
+              std::cout << "-------------------------------------------------------\n";
+              std::cout << "To give food to your spoon, you would call your spoon like normal but you would type 'Feed'! Try it out!\n";
+              std::cout << "-------------------------------------------------------\n";
+          std::cin >> call_tot;
+          if (call_tot == spoonname) {
+            std::cout << spoonname << " walks up to you!\n";
+            }
+          }
+          std::cin >> options;
+            if (options == "Feed") {
+                std::cout << "-------------------------------------------------------\n";
+                std::cout << "Good job! Let's give our spoon some bread! Type 'Bread'\n";
+                std::cout << "-------------------------------------------------------\n";
+                std::cout << "School pizza      Bread       Watermelon\n";
+                std::cin >> food_options;
+                if(food_options == "Bread") {
+                std::cout << "The Spoon ate the bread! She thought it was good!\n";
+                }
+            }
+            else {
+                std::cout << "-------------------------------------------------------\n";
+                std::cout << "Make sure to Type 'Feed' and not 'feed'!\n";
+                std::cout << "-------------------------------------------------------\n";
+                std::cin >> options;
+                if (options == "Feed") {
+                std::cout << "-------------------------------------------------------\n";
+                std::cout << "Good job! Let's give our spoon some bread! Type 'Bread'\n";
+                std::cout << "-------------------------------------------------------\n";
+                std::cout << "School pizza      Bread       Watermelon\n";
+                std::cin >> food_options;
+                if(food_options == "Bread") {
+                std::cout << "The Spoon ate the bread! She thought it was good!\n";
+                }
+            }
+            }
+                std::cout << "-------------------------------------------------------\n";
+                std::cout << "Good Job!! Our Spoon is now full from one slice of bread (ig)\n";
+              // learning how to give your pretty spoon a bath cause stinky
+                
+                std::cout << "Now that we know how to feed our spoon, let's learn how to give our spoon a bath!\n";
+                
+                std::cout << "To give your spoon a bath, call your spoon and say 'Bath'! Try it out!\n";
+                std::cout << "-------------------------------------------------------\n";
+                std::cin >> call_tot;
+                if (call_tot == spoonname) {
+                    std::cout << spoonname << " walks up to you!\n";
+                }
+                else {
+              std::cout << "-------------------------------------------------------\n";
+              std::cout << "Remember, you have to call your spoon by typing '" << spoonname << "' and then say 'Bath'!\n";
+              std::cout << "-------------------------------------------------------\n";
+              std::cin >> call_tot;
+              if (call_tot == spoonname) {
+                    std::cout << spoonname << " walks up to you!\n";
+                    std::cin >> options;
+                
+                }
+                }
+                std::cin >> options;
+                if (options == "Bath") {
+                    std::cout << "You bring " << spoonname << " to the sink.\nYou put some of the Dishsoap that you bought fron the pet shop on her.\nYou start to clean " << spoonname << " until she is completly clean!";
+                }
+                else {
+              std::cout << "-------------------------------------------------------\n";
+              std::cout << "Remember to spell it as 'Bath' and not 'bath'!\n";
+              std::cout << "-------------------------------------------------------\n";
+              std::cin >> options;
+                if (options == "Bath") {
+                    std::cout << "You bring " << spoonname << " to the sink.\nYou put some of the Dishsoap that you bought fron the pet shop on her.\nYou start to clean " << spoonname << " until she is completly clean!";
+                }
+                }
+            
+                
+                
+            }
+    
+
     int main() {
 std::string what;
 std::string ok;
@@ -169,12 +271,12 @@ std::string ok;
         std::cout << "Peak";
        }
    }
-    if (what == "No" || what == "no") {
+   if (what == "No" || what == "no") {
     std::cout << "Ok, geez";
    }
    adoption();   
     viewingarea();
     store_at_start();
-    game();
+    tutoriel();   
     return 0;
 }
