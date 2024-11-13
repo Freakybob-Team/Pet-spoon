@@ -140,7 +140,6 @@ if (foodbuy == "all" || foodbuy == "All") {
           std::cout << "You can call your spoon over by typing '" << spoonname << "'! Try it out!\n";
           std::cout << "-------------------------------------------------------\n";
           std::cin >> call_tot;
-          std::cout << "\n";
           if (call_tot == spoonname) {
             std::cout << spoonname << " walked over to you!\n";
             std::cout << "-------------------------------------------------------\n";
@@ -151,7 +150,6 @@ if (foodbuy == "all" || foodbuy == "All") {
             std::cout << "Remember, you have to call your spoon by typing '" << spoonname << "'\n";
             std::cout << "-------------------------------------------------------\n";
             std::cin >> call_tot;
-            std::cout << "\n";
             if (call_tot == spoonname) {
               std::cout << spoonname << " walked over to you!\n";
             }
@@ -278,7 +276,6 @@ if (foodbuy == "all" || foodbuy == "All") {
                 std::cout << "-------------------------------------------------------\n";
             }
             
-    
 
     int main() {
 std::string what;
@@ -312,6 +309,6 @@ std::string ok;
    adoption();   
     viewingarea();
     store_at_start();
-    tutoriel();   
+    tutoriel();  
     return 0;
 }
