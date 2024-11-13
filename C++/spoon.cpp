@@ -126,7 +126,7 @@ if (foodbuy == "all" || foodbuy == "All") {
         std::string options;
         std::string food_options;
         std::string feed;
-        
+        std::string understand;
 
 
          std::cout << "\n-------------------------------------------------------";
@@ -241,7 +241,7 @@ if (foodbuy == "all" || foodbuy == "All") {
                 }
                 }
                 std::cout << "-------------------------------------------------------\n";
-                std::cout << "Your pet spoon is bored. Let's take your pet spoon on a walk! Enter 'Walk'\n";
+                std::cout << "Your pet spoon is bored. Let's take your pet spoon on a walk! To take your pet on a walk, call your pet and Enter 'Walk'\n";
                 std::cout << "-------------------------------------------------------\n";
                 std::cin >> call_tot;
                               if (call_tot == spoonname) {
@@ -256,17 +256,28 @@ if (foodbuy == "all" || foodbuy == "All") {
                                 std::cin >> options;
                               }
                               }
-                                    if (options == "walk") {
-                        std::cout << "You're going on a walk with your pet " << spoonname << " .Yay!\n";
-                        std::cout << spoonname << "meets pet fork. It seems like they're having fun!\n";
-                        std::cout << spoonname << "now has a friend.Yay!\n";
+                                    if (options == "Walk") {
+                        std::cout << "You're going on a walk with your pet, " << spoonname << "!! Yay!\n";
+                        std::cout << spoonname << " meets pet fork. It seems like they're having fun!\n";
+                        std::cout << spoonname << " now has a friend.Yay!\n";
                         xp = xp + 10;
-                        std::cout << "+ " << xp << " xp.You now have" << xp << " xp";
+                        std::cout << "-------------------------------------------------------\n";
+                        std::cout << "+ " << xp << " xp. You now have " << xp << " xp!";
                 
                     }
-                std::cout << "Congrats, you just did the tutorial! You're now ready to take care of your pet spoon!\n";
-                
+                std::cout << "\nCongrats, you just did the tutorial! You have learned all the basics on how to take care of your spoon!\n";
+                std::cout << "Do You understand everything? (Yes or no)\n";
+                std::cout << "-------------------------------------------------------\n";
+                std::cin >> understand;
+                if (understand == "Yes" || understand == "yes") {
+                    std::cout << "Good! Let's start this!\n";
+                }
+                if (understand == "No" || understand == "no") {
+                    tutoriel();
+                }
+                std::cout << "-------------------------------------------------------\n";
             }
+            
     
 
     int main() {
