@@ -169,6 +169,9 @@ std::string ok;
         std::cout << "Peak";
        }
    }
+    if (what == "No" || what == "no") {
+    std::cout << "Ok, geez";
+   }
    adoption();   
     viewingarea();
     store_at_start();
