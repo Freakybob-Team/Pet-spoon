@@ -27,6 +27,7 @@ void adoption() {
     std::cout << "There is only one pet spoon left. It's a She and is 7 months old\n";
     std::cout << "Do you want to buy her? She's only $3\n\n";
     std::cout << "You have $800, y/n\n";
+    std::cout << "You: ";
     std::cin >> buy;
 
     if (buy == "y" || buy == "yes" || buy == "Yes") {
@@ -34,10 +35,12 @@ void adoption() {
     }
     if (buy == "n" || buy == "no" || buy == "No") {
         std::cout << "So the thing about that is that you can't say no. You have 2 options. Buy the spoon or quit the game. (Buy or quit)\n\n";
+        std::cout << "You: ";
         std::cin >> useroption;
         if (useroption == "Buy" || useroption == "buy") {
             std::cout << "Do you want to buy her? She's only $3\n\n";
     std::cout << "You have $800, y/n\n";
+    std::cout << "You: ";
     std::cin >> buy2;
     
     if (buy2 == "y" || buy2 == "yes" || buy2 == "Yes") {
@@ -47,6 +50,7 @@ void adoption() {
         std::cout << "Nope, try again.\n\n";
         std::cout << "Do you want to buy her? She's only $3\n\n";
     std::cout << "You have $800, (y)\n";
+    std::cout << "You: ";
     std::cin >> buy3;
     }
     
@@ -66,7 +70,7 @@ void adoption() {
         std::cout << "We'll start off by buying some food for your pet spoon. Buy all of them by typing 'All'\n\n";
         std::cout << "School pizza      Bread       Watermelon\n";
         std::cout << "     $3            $1             $3            \n";
-        
+        std::cout << "You: ";
         std::cin >> foodbuy;
         if (foodbuy == "all" || foodbuy == "All") {
             std::cout  << "You have bought school pizza, Bread, Wathermelon!\n";
@@ -81,6 +85,7 @@ void adoption() {
         std::cout << "We'll start off by buying some food for your pet spoon. Buy all of them by typing 'All'\n\n";
         std::cout << "School pizza      Bread       Watermelon\n";
         std::cout << "     $3            $1             $3            \n";
+        std::cout << "You: ";
         std::cin >> foodbuy;
 if (foodbuy == "all" || foodbuy == "All") {
             std::cout  << "You have bought school pizza, Bread, Wathermelon!\n";
@@ -94,6 +99,7 @@ if (foodbuy == "all" || foodbuy == "All") {
         std::cout << "I recommend buy all of these. Type 'All'.\n\n";
         std::cout << "Yummy oil  Dishwasher pods   Collar   Bed\n";
         std::cout << "   $3            $5            $3     $9\n\n";
+        std::cout << "You: ";
         std::cin >> essentialsbuy;
     
         if (essentialsbuy == "all" || essentialsbuy == "All") {
@@ -109,6 +115,7 @@ if (foodbuy == "all" || foodbuy == "All") {
         std::cout << "I recommend buy all of these. Type 'All'.\n\n";
         std::cout << "Yummy oil  Dishwasher pods   Collar   Bed\n";
         std::cout << "   $3            $5            $3     $9\n\n";
+        std::cout << "You: ";
         std::cin >> essentialsbuy;
         if (essentialsbuy == "all" || essentialsbuy == "All") {
             std::cout << "You have bought Yummy oil, Dishwasher pods, collar and a bed!\n";
@@ -132,6 +139,7 @@ if (foodbuy == "all" || foodbuy == "All") {
 
          std::cout << "\n-------------------------------------------------------";
           std::cout << "\nYou have brought your spoon home! While she explores the house, you need to give her a name!\nWhat should their name be?\n";
+          std::cout << "You: ";
           std::cin >> spoonname;
           std::cout << "\nYour spoon has been named " << spoonname << "!\n";
           std::cout << "-------------------------------------------------------\n";
@@ -140,6 +148,7 @@ if (foodbuy == "all" || foodbuy == "All") {
           std::cout << "-------------------------------------------------------\n";
           std::cout << "You can call your spoon over by typing '" << spoonname << "'! Try it out!\n";
           std::cout << "-------------------------------------------------------\n";
+          std::cout << "You: ";
           std::cin >> call_tot;
           if (call_tot == spoonname) {
             std::cout << spoonname << " walked over to you!\n";
@@ -150,6 +159,7 @@ if (foodbuy == "all" || foodbuy == "All") {
             std::cout << "-------------------------------------------------------\n";
             std::cout << "Remember, you have to call your spoon by typing '" << spoonname << "'\n";
             std::cout << "-------------------------------------------------------\n";
+            std::cout << "You: ";
             std::cin >> call_tot;
             if (call_tot == spoonname) {
               std::cout << spoonname << " walked over to you!\n";
@@ -161,6 +171,7 @@ if (foodbuy == "all" || foodbuy == "All") {
           std::cout << "-------------------------------------------------------\n";
           std::cout << "To give food to your spoon, you would call your spoon like normal but you would type 'Feed'! Try it out!\n";
           std::cout << "-------------------------------------------------------\n";
+          std::cout << "You: ";
           std::cin >> call_tot;
           if (call_tot == spoonname) {
             std::cout << spoonname << " walks up to you!\n";
@@ -171,17 +182,20 @@ if (foodbuy == "all" || foodbuy == "All") {
               std::cout << "-------------------------------------------------------\n";
               std::cout << "To give food to your spoon, you would call your spoon like normal but you would type 'Feed'! Try it out!\n";
               std::cout << "-------------------------------------------------------\n";
+              std::cout << "You: ";
           std::cin >> call_tot;
           if (call_tot == spoonname) {
             std::cout << spoonname << " walks up to you!\n";
             }
           }
+          std::cout << "You: ";
           std::cin >> options;
             if (options == "Feed") {
                 std::cout << "-------------------------------------------------------\n";
                 std::cout << "Good job! Let's give our spoon some bread! Type 'Bread'\n";
                 std::cout << "-------------------------------------------------------\n";
                 std::cout << "School pizza      Bread       Watermelon\n";
+                std::cout << "You: ";
                 std::cin >> food_options;
                 if(food_options == "Bread") {
                 std::cout << "The Spoon ate the bread! She thought it was good!\n";
@@ -191,6 +205,7 @@ if (foodbuy == "all" || foodbuy == "All") {
                 std::cout << "-------------------------------------------------------\n";
                 std::cout << "Make sure to Type 'Feed' and not 'feed'!\n";
                 std::cout << "-------------------------------------------------------\n";
+                std::cout << "You: ";
                 std::cin >> options;
                 if (options == "Feed") {
                 std::cout << "-------------------------------------------------------\n";
@@ -211,6 +226,7 @@ if (foodbuy == "all" || foodbuy == "All") {
                 
                 std::cout << "To give your spoon a bath, call your spoon and say 'Bath'! Try it out!\n";
                 std::cout << "-------------------------------------------------------\n";
+                std::cout << "You: ";
                 std::cin >> call_tot;
                 if (call_tot == spoonname) {
                     std::cout << spoonname << " walks up to you!\n";
@@ -219,6 +235,7 @@ if (foodbuy == "all" || foodbuy == "All") {
               std::cout << "-------------------------------------------------------\n";
               std::cout << "Remember, you have to call your spoon by typing '" << spoonname << "' and then say 'Bath'!\n";
               std::cout << "-------------------------------------------------------\n";
+              std::cout << "You: ";
               std::cin >> call_tot;
               if (call_tot == spoonname) {
                     std::cout << spoonname << " walks up to you!\n";
@@ -226,6 +243,7 @@ if (foodbuy == "all" || foodbuy == "All") {
                 
                 }
                 }
+                std::cout << "You: ";
                 std::cin >> options;
                 if (options == "Bath") {
                     std::cout << "You bring " << spoonname << " to the sink.\nYou put some of the Dishsoap that you bought fron the pet shop on her.\nYou start to clean " << spoonname << " until she is completly clean!";
@@ -234,6 +252,7 @@ if (foodbuy == "all" || foodbuy == "All") {
               std::cout << "-------------------------------------------------------\n";
               std::cout << "Remember to spell it as 'Bath' and not 'bath'!\n";
               std::cout << "-------------------------------------------------------\n";
+              std::cout << "You: ";
               std::cin >> options;
                 if (options == "Bath") {
                     std::cout << "You bring " << spoonname << " to the sink.\nYou put some of the Dishsoap that you bought fron the pet shop on her.\nYou start to clean " << spoonname << " until she is completly clean!\n";
@@ -242,23 +261,25 @@ if (foodbuy == "all" || foodbuy == "All") {
                 std::cout << "-------------------------------------------------------\n";
                 std::cout << "Your pet spoon is bored. Let's take your pet spoon on a walk! To take your pet on a walk, call your pet and Enter 'Walk'\n";
                 std::cout << "-------------------------------------------------------\n";
+                std::cout << "You: ";
                 std::cin >> call_tot;
                               if (call_tot == spoonname) {
                     std::cout << spoonname << " walks up to you!\n";
+                    std::cout << "You: ";
                     std::cin >> options;
                               }
                               else {
-                                  std::cin >> call_tot;
                                  std::cout << "Erm, you need to enter your pet's spoon name\n";
                                 if (call_tot == spoonname) {
                                 std::cout << spoonname << " walks up to you!\n";
+                                std::cout << "You: ";
                                 std::cin >> options;
                               }
                               }
                                     if (options == "Walk") {
                         std::cout << "You're going on a walk with your pet, " << spoonname << "!! Yay!\n";
                         std::cout << spoonname << " meets pet fork. It seems like they're having fun!\n";
-                        std::cout << spoonname << " now has a friend.Yay!\n";
+                        std::cout << spoonname << " now has a friend, Yayayaya!\n";
                         xp = xp + 10;
                         std::cout << "-------------------------------------------------------\n";
                         std::cout << "+ " << xp << " xp. You now have " << xp << " xp!";
@@ -267,6 +288,7 @@ if (foodbuy == "all" || foodbuy == "All") {
                 std::cout << "\nCongrats, you just did the tutorial! You have learned all the basics on how to take care of your spoon!\n";
                 std::cout << "Do You understand everything? (Yes or no)\n";
                 std::cout << "-------------------------------------------------------\n";
+                std::cout << "You: ";
                 std::cin >> understand;
                 if (understand == "Yes" || understand == "yes") {
                     std::cout << "Good! Let's start this!\n";
@@ -278,7 +300,7 @@ if (foodbuy == "all" || foodbuy == "All") {
                 
             }
             void game() {
-                
+                // Noma, we need to figure out how to put the spoonname here from the other void grge
                 }
             
 
