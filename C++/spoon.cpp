@@ -120,6 +120,7 @@ if (foodbuy == "all" || foodbuy == "All") {
         std::cout << "\nCongrats! You have everything you'll need for your pet spoon! The Store is always open for you to buy more supplies!\nI hope you enjoy your time as a new spoon owner!!";
     }
     void tutoriel() {
+        int xp = 0;
         std::string spoonname;
         std::string call_tot;
         std::string options;
@@ -236,11 +237,34 @@ if (foodbuy == "all" || foodbuy == "All") {
               std::cout << "-------------------------------------------------------\n";
               std::cin >> options;
                 if (options == "Bath") {
-                    std::cout << "You bring " << spoonname << " to the sink.\nYou put some of the Dishsoap that you bought fron the pet shop on her.\nYou start to clean " << spoonname << " until she is completly clean!";
+                    std::cout << "You bring " << spoonname << " to the sink.\nYou put some of the Dishsoap that you bought fron the pet shop on her.\nYou start to clean " << spoonname << " until she is completly clean!\n";
                 }
                 }
-            
+                std::cout << "-------------------------------------------------------\n";
+                std::cout << "Your pet spoon is bored. Let's take your pet spoon on a walk! Enter 'Walk'\n";
+                std::cout << "-------------------------------------------------------\n";
+                std::cin >> call_tot;
+                              if (call_tot == spoonname) {
+                    std::cout << spoonname << " walks up to you!\n";
+                    std::cin >> options;
+                              }
+                              else {
+                                  std::cin >> call_tot;
+                                 std::cout << "Erm, you need to enter your pet's spoon name\n";
+                                if (call_tot == spoonname) {
+                                std::cout << spoonname << " walks up to you!\n";
+                                std::cin >> options;
+                              }
+                              }
+                                    if (options == "walk") {
+                        std::cout << "You're going on a walk with your pet " << spoonname << " .Yay!\n";
+                        std::cout << spoonname << "meets pet fork. It seems like they're having fun!\n";
+                        std::cout << spoonname << "now has a friend.Yay!\n";
+                        xp = xp + 10;
+                        std::cout << "+ " << xp << " xp.You now have" << xp << " xp";
                 
+                    }
+                std::cout << "Congrats, you just did the tutorial! You're now ready to take care of your pet spoon!\n";
                 
             }
     
