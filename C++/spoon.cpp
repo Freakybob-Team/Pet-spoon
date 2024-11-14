@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+std::string spoonname;
 void adoption() {
     std::string username;
     std::cout << "\n-------------------------------------------------------\n";
@@ -17,7 +18,6 @@ void adoption() {
      }
 
      void viewingarea() {
-         std::string spoonname;
          std::string buy;
          std::string useroption;
          std::string buy2;
@@ -127,9 +127,12 @@ if (foodbuy == "all" || foodbuy == "All") {
          std::cout << "-------------------------------------------------------";
         std::cout << "\nCongrats! You have everything you'll need for your pet spoon! The Store is always open for you to buy more supplies!\nI hope you enjoy your time as a new spoon owner!!";
     }
+    
+    void game(const std::string &spoonname) {
+    std::cout << spoonname;
+}
     void tutoriel() {
         int xp = 0;
-        std::string spoonname;
         std::string call_tot;
         std::string options;
         std::string food_options;
@@ -297,11 +300,13 @@ if (foodbuy == "all" || foodbuy == "All") {
                     tutoriel();
                 }
                 std::cout << "-------------------------------------------------------\n";
-                
             }
             void game() {
-                // Noma, we need to figure out how to put the spoonname here from the other void grge
-                }
+                std::cout << "Your spoon has died. You have lost the game /j\n";
+            }
+           
+                
+                
             
 
     int main() {
@@ -335,11 +340,13 @@ std::string ok;
     std::cout << "Ok, geez";
    }
    if (ok == "Bugs" || ok == "bugs") {
-       std::cout << "\nNot knowing how to carry 'spoonname' through other 'voids'\nIf you spam the game, it'll bug out lmao\nThat's all we really know greg\n";
+    std::cout << "-------------------------------------------------------";
+       std::cout << "\nIf you spam the game, it'll bug out lmao\nThat's all we really know greg\n";
    }
    adoption();   
     viewingarea();
     store_at_start();
-    tutoriel();  
+    tutoriel();
+    game();
     return 0;
 }
