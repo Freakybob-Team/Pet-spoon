@@ -325,9 +325,9 @@ if (foodbuy == "all" || foodbuy == "All") {
                 food_options == "1") {
                     std::cout << spoonname << " ate the School pizza! Gross..";
                 }
-                if (food_options == "Bread" || food_option == "bread" ||
+                if (food_options == "Bread" || food_options == "bread" ||
                 food_options == "2") {
-                    std::cout << spoonname << " ate the Bread!  yummers";
+                    std::cout << spoonname << " ate the Bread Yummers";
                 }
                 }
             
