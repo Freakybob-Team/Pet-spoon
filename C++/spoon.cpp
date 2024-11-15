@@ -329,6 +329,9 @@ if (foodbuy == "all" || foodbuy == "All") {
                 food_options == "2") {
                     std::cout << spoonname << " ate the Bread Yummers";
                 }
+                else {
+                    game();
+                }
                 }
             
            
