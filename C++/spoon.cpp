@@ -341,56 +341,20 @@ if (foodbuy == "all" || foodbuy == "All") {
                     game();
                 }
                 if (food_options == "Watermelon" || food_options == "watermelon" || food_options == "3") {
-                    std::cout << spoonname << " ate the Watermelon! so wet and juicy :3\n";
-                }
-                
-                
-                
+                    std::cout << spoonname << " ate the Watermelon! So yummers!!!!\n";
+                    game();
+                }       
     //pet walk (real)
     if (options == "walk" || options == "Walk") {
-        std::cout << "You tell " << spoonname << " that you're taking her on a walk.";
+        std::cout << "You tell " << spoonname << " that you're taking her on a walk.\n";
+        std::cout << "Where do you want to go?";
+        
     }
 
-    if (options == "shop" || options == "Shop") {
-        std::cout << "You're now in the shop.What would you like to buy?\n";
-        std::cout << "1.Squishmallow    2.Freakybob toy\n";
-        std::cout << "10$                5$\n";
-        std::cin >> shop_options;
-        if (shop_options == "1") {
-            if (money < 10) {
-                std::cout << "not enough money!\n";
-                game();
-            }
-            if (money >= 10) {
-                money = money - 10;
-                std::cout << "you bought a squishmallow.\n";
-                std::cout << "you now have " << money << "$\n";
-                game();
-            }
-        }
-        if (shop_options == "2") {
-            if (money < 5) {
-                std::cout << "not enough money!\n";
-                game();
-            }
-            if (money >= 5) {
-                std::cout << "You bought a freakybob toy\n";
-                money = money - 5;
-                std::cout << "you now have " << money << "$\n";
-                game();
-            }
-        }
-    }
-        else {
-            game();
-        }
-    }
-                else {
-                    game();
-                }
+
 
                 }
-
+}
 
 
 
