@@ -1,3 +1,10 @@
+// Heya!! If you want to play Spoon, you'll have to use an online website.
+// You can use these 2 that I recommend!!
+// https://www.onlinegdb.com/online_c++_compiler OR https://www.programiz.com/cpp-programming/online-compiler/
+// Copy and paste this code into the terminal and press run!
+// ---------------------------------------------------------------
+// If you want to use the actual file without using a website, you can read the README assigned to this Repo. If you find any bugs, make an issue.
+
 #include <iostream>
 #include <string>
 #include <cstdlib>
