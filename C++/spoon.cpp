@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
-int money = 10;
+int money = 777;
 std::string spoonname;
 int xp;
 
@@ -340,12 +340,15 @@ if (foodbuy == "all" || foodbuy == "All") {
                     std::cout << spoonname << " ate the Bread Yummers\n";
                     game();
                 }
+                if (food_options == "Watermelon" || food_options == "watermelon" || food_options == "3") {
+                    std::cout << spoonname << " ate the Watermelon! so wet and juicy :3\n";
+                }
+                
+                
+                
     //pet walk (real)
     if (options == "walk" || options == "Walk") {
-        std::cout << spoonname << " pet " << spoonname << " found a pet freakybob.They're now friends\n";
-        xp = xp + 10;
-        std::cout << "+10xp.You now have " << xp << " xp.\n"; ;
-        game();
+        std::cout << "You tell " << spoonname << " that you're taking her on a walk.";
     }
 
     if (options == "shop" || options == "Shop") {
