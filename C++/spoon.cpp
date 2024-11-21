@@ -312,6 +312,7 @@ if (foodbuy == "all" || foodbuy == "All") {
                 std::cout << "-------------------------------------------------------\n";
             }
             void game() {
+                std::string where_to_go_greg;
                 std::string call_tot;
                 std::string shop_options;
                 std::string food_options;
@@ -348,6 +349,12 @@ if (foodbuy == "all" || foodbuy == "All") {
     if (options == "walk" || options == "Walk") {
         std::cout << "You tell " << spoonname << " that you're taking her on a walk.\n";
         std::cout << "Where do you want to go?";
+        std::cout << "1. Store | 2. Park | 3. Cereal museum
+        std::cin >> where_to_go_greg;
+        if (where_to_go_greg == "1" || where_to_go_greg == "Store" || where_to_go_greg == "store") {
+          std::cout << "You walked to the store with " << spooname << "!!";
+        
+        
         
     }
 
