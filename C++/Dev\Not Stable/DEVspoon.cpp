@@ -374,6 +374,7 @@ void tutoriel() {
     std::cout << "-------------------------------------------------------\n";
 }
 // --------------------------------------------------------------------------------------------------------------
+// Game is super buggy. Noma, we have to cook
 void game() {
     std::string where_to_go_greg;
     std::string call_tot;
