@@ -24,6 +24,7 @@ def main():
     if (ok == 'bugs' or ok == 'Bugs'):
         print("-------------------------------------------------------")
         print("If You say anything else to the Buying of the Spoon part, it will completly skip that :sob:\nThat's all for now...\n")
-
+    if (ok == 'why' or 'Why'):
+        print("I just said to not ask vro\n")
 if __name__=="__main__":
     main()
