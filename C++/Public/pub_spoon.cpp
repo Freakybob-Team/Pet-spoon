@@ -58,7 +58,7 @@ std::string ok;
     viewingarea();
     store_at_start();
     tutoriel();
-    game();
+    // game();
     return 0;
 }
 // All the voids greg (I put it down here cause greg)
@@ -219,11 +219,11 @@ if (foodbuy == "all" || foodbuy == "All") {
           std::cout << "-------------------------------------------------------\n";
           std::cout << "You: ";
           std::cin >> call_tot;
-          if (call_tot == "skip" || call_tot == "Skip") {
+          /* if (call_tot == "skip" || call_tot == "Skip") {
               std::cout << "Skipping tutoriel...";
               game();
               return;
-          }
+          } */
           if (call_tot == spoonname) {
             std::cout << spoonname << " walked over to you!\n";
             std::cout << "-------------------------------------------------------\n";
@@ -371,9 +371,12 @@ if (foodbuy == "all" || foodbuy == "All") {
                     tutoriel();
                 }
                 std::cout << "-------------------------------------------------------\n";
+                std::cout << "The Game Void is not able to be used at this momment. It is very buggy and barely works so just wait until we can fix this.\n -5quirre1;
             }
+
             // --------------------------------------------------------------------------------------------------------------
-            void game(){
+// This will be down until we figure why it's so buggy.
+           /* void game(){
                 std::string where_to_go_greg;
                 std::string call_tot;
                 std::string shop_options;
@@ -417,5 +420,7 @@ if (foodbuy == "all" || foodbuy == "All") {
           std::cout << "You walked to the store with " << spoonname << "!!";
     }
       }
+        
         }
           }
+          */
