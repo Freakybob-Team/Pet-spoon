@@ -26,11 +26,18 @@ int main() {
 
 
     // this is spoon. cause spon is gref
-    std::cout << " SSSSS    PPPPP   OOO   OOO   N   N " << std::endl;
-    std::cout << "S         P   P  O   O O   O  NN  N " << std::endl;
-    std::cout << " SSSSS    PPPPP  O   O O   O  N N N " << std::endl;
-    std::cout << "     S    P      O   O O   O  N  NN " << std::endl;
-    std::cout << " SSSSS    P       OOO   OOO   N   N " << std::endl;
+    // too many warnings greg help
+    std::cout << R"(
+                                         
+                                         
+  ____  _____     ___     ___     ___    
+ /',__\/\ '__`\  / __`\  / __`\ /' _ `\  
+/\__, `\ \ \L\ \/\ \L\ \/\ \L\ \/\ \/\ \ 
+\/\____/\ \ ,__/\ \____/\ \____/\ \_\ \_\
+ \/___/  \ \ \/  \/___/  \/___/  \/_/\/_/
+          \ \_\                          
+           \/_/                          
+)" << '\n';
     std::cout << "Made by 5quirre1 and Nomaakip\n";
     std::cout << "-------------------------------------------------------\n";
     std::cout << "Welcome to Spoon. Say 'Info' for what Spoon is about.\nSay anything else to continue on your adventure of taking care of a spoon rgeg\n";
