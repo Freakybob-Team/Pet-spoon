@@ -3,7 +3,7 @@
 // https://www.onlinegdb.com/online_c++_compiler OR https://www.programiz.com/cpp-programming/online-compiler/
 // Copy and paste this code into the terminal and press run!
 // ---------------------------------------------------------------
-// If you want to use the actual file without using a website, you can read the README assigned to this Repo. If you find any bugs, make an issue.
+// If you want to use the actual file without using a website, you can read the README assigned to this Repo to find out how. If you find any bugs, make an issue.
 
 #include <iostream>
 #include <string>
