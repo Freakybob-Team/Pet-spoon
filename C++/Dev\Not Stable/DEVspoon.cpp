@@ -1,12 +1,68 @@
+// Heya!! If you want to play Spoon, you'll have to use an online website.
+// You can use these 2 that I recommend!!
+// https://www.onlinegdb.com/online_c++_compiler OR https://www.programiz.com/cpp-programming/online-compiler/
+// Copy and paste this code into the terminal and press run!
+// If there are any bugs you've found, either tell me if we're at the same school or make an issue on the github!
+// **************************************************************************************************************
+// If you want to use the actual file without using a website, you can read the README assigned to this Repo. If you find any bugs, make an issue please ^^
+//************************************************************************************************************************************************
 #include <iostream>
 #include <string>
 #include <cstdlib>
-int money = 777;
+//***important strings***
 std::string spoonname;
 int xp;
+std::string username;
+int money = 777;
+// the weird void stuff greg
+void adoption();
+void viewingarea();
+void store_at_start();
+void tutoriel();
+void game();
+    int main() {
+std::string what;
+std::string ok;
 
+
+// this is spoon. cause spon is gref
+    std::cout << " SSSSS    PPPPP   OOO   OOO   N   N " << std::endl;
+    std::cout << "S         P   P  O   O O   O  NN  N " << std::endl;
+    std::cout << " SSSSS    PPPPP  O   O O   O  N N N " << std::endl;
+    std::cout << "     S    P      O   O O   O  N  NN " << std::endl;
+    std::cout << " SSSSS    P       OOO   OOO   N   N " << std::endl;
+    std::cout << "Made by 5quirre1 and Nomaakip\n";
+    std::cout << "-------------------------------------------------------\n";
+    std::cout << "Welcome to Spoon. Say 'Info' for what Spoon is about.\nSay anything else to continue on your adventure of taking care of a spoon rgeg\n";
+    std::cin >> what;
+   if (what == "info" || what == "Info" || what == "INFO") {
+    std::cout << "-------------------------------------------------------";
+       std::cout << "\nThis game is about taking care of a pet spoon. Don't ask why cause like, it's very useful lmao\nSome stuff that is going to be updated in later updates:\n\nA saving system\nRandom events when you like use the command 'Check' or something\nRandom cool stuff\nDo You want to know some bugs that have been found? (Say 'Bugs')\n";
+
+       std::cin >> ok;
+       if (ok == "why" || ok == "Why") {
+        std::cout << "I just said to not ask vro\n\n";
+       }
+       if (ok == "skibidi" || ok == "SKIBIDI" || ok == "Skibidi") {
+        std::cout << "Peak";
+       }
+   }
+   if (what == "No" || what == "no") {
+    std::cout << "Ok, geez";
+   }
+   if (ok == "Bugs" || ok == "bugs") {
+    std::cout << "-------------------------------------------------------";
+       std::cout << "\nIf You say anything else to the Buying of the Spoon part, it will completly skip that :sob:\nThat's all for now...\n";
+   }
+    adoption();
+    viewingarea();
+    store_at_start();
+    tutoriel();
+    game();
+    return 0;
+}
+// All the voids greg (I put it down here cause greg)
 void adoption() {
-    std::string username;
     std::cout << "\n-------------------------------------------------------\n";
     std::cout << "Dominic: Welcome to the spoon adoption place, I am the granpapa of all the\nspoons here, greg. Wait, You're not greg, what is your name, random person?\n";
     std::cout << "You: ";
@@ -43,7 +99,7 @@ void adoption() {
         std::cin >> useroption;
         if (useroption == "quit" || useroption == "Quit") {
         std::cout << "No one likes you.";
-        adoption();
+        exit(888888888);
     }
         if (useroption == "Buy" || useroption == "buy") {
             std::cout << "Do you want to buy her? She's only $3\n\n";
@@ -51,7 +107,9 @@ void adoption() {
     std::cout << "You: ";
     std::cin >> buy2;
         }
+        
     }
+    
 
 
     if (buy2 == "y" || buy2 == "yes" || buy2 == "Yes") {
@@ -69,7 +127,7 @@ void adoption() {
          std::cout << "You have bought your very first pet spoon! Now that you have bought a pet spoon, you're gonna need some supplies so that you can take care of your spoon!\n\n";
     }
     }
-
+    
 
     void store_at_start() {
         double money;
@@ -139,9 +197,7 @@ if (foodbuy == "all" || foodbuy == "All") {
         std::cout << "\nCongrats! You have everything you'll need for your pet spoon! The Store is always open for you to buy more supplies!\nI hope you enjoy your time as a new spoon owner!!";
     }
 
-    void game(const std::string &spoonname) {
-    std::cout << spoonname;
-}
+    
     void tutoriel() {
         std::string call_tot;
         std::string options;
@@ -163,6 +219,11 @@ if (foodbuy == "all" || foodbuy == "All") {
           std::cout << "-------------------------------------------------------\n";
           std::cout << "You: ";
           std::cin >> call_tot;
+          if (call_tot == "skip" || call_tot == "Skip") {
+              std::cout << "Skipping tutoriel...";
+              game();
+              return;
+          }
           if (call_tot == spoonname) {
             std::cout << spoonname << " walked over to you!\n";
             std::cout << "-------------------------------------------------------\n";
@@ -311,7 +372,8 @@ if (foodbuy == "all" || foodbuy == "All") {
                 }
                 std::cout << "-------------------------------------------------------\n";
             }
-            void game() {
+            // --------------------------------------------------------------------------------------------------------------
+            void game(){
                 std::string where_to_go_greg;
                 std::string call_tot;
                 std::string shop_options;
@@ -349,62 +411,11 @@ if (foodbuy == "all" || foodbuy == "All") {
     if (options == "walk" || options == "Walk") {
         std::cout << "You tell " << spoonname << " that you're taking her on a walk.\n";
         std::cout << "Where do you want to go?";
-        std::cout << "1. Store | 2. Park | 3. Cereal museum
+        std::cout << "1. Store | 2. Park | 3. Cereal museum";
         std::cin >> where_to_go_greg;
         if (where_to_go_greg == "1" || where_to_go_greg == "Store" || where_to_go_greg == "store") {
-          std::cout << "You walked to the store with " << spooname << "!!";
-        
-        
-        
+          std::cout << "You walked to the store with " << spoonname << "!!";
     }
-
-
-
-                }
-}
-
-
-
-
-
-    int main() {
-std::string what;
-std::string ok;
-
-
-// this is spoon. cause spon is gref
-    std::cout << " SSSSS    PPPPP   OOO   OOO   N   N " << std::endl;
-    std::cout << "S         P   P  O   O O   O  NN  N " << std::endl;
-    std::cout << " SSSSS    PPPPP  O   O O   O  N N N " << std::endl;
-    std::cout << "     S    P      O   O O   O  N  NN " << std::endl;
-    std::cout << " SSSSS    P       OOO   OOO   N   N " << std::endl;
-    std::cout << "Made by 5quirre1 and Nomaakip\n";
-    std::cout << "-------------------------------------------------------\n";
-    std::cout << "Welcome to Spoon. Say 'Info' for what Spoon is about.\nSay anything else to continue on your adventure of taking care of a spoon rgeg\n";
-    std::cin >> what;
-   if (what == "info" || what == "Info" || what == "INFO") {
-    std::cout << "-------------------------------------------------------";
-       std::cout << "\nThis game is about taking care of a pet spoon. Don't ask why cause like, it's very useful lmao\nSome stuff that is going to be updated in later updates:\n\nA saving system\nRandom events when you like use the command 'Check' or something\nRandom cool stuff\nDo You want to know some bugs that have been found? (Say 'Bugs')\n";
-
-       std::cin >> ok;
-       if (ok == "why" || ok == "Why") {
-        std::cout << "I just said to not ask vro\n\n";
-       }
-       if (ok == "skibidi" || ok == "SKIBIDI" || ok == "Skibidi") {
-        std::cout << "Peak";
-       }
-   }
-   if (what == "No" || what == "no") {
-    std::cout << "Ok, geez";
-   }
-   if (ok == "Bugs" || ok == "bugs") {
-    std::cout << "-------------------------------------------------------";
-       std::cout << "\nIf you spam the game, it'll bug out lmao\nThat's all we really know greg\n";
-   }
-   adoption();
-    viewingarea();
-    store_at_start();
-    tutoriel();
-    game();
-    return 0;
-}
+      }
+        }
+          }
