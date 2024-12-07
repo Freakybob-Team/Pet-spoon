@@ -1,3 +1,4 @@
+# please use https://github.com/Freakybob-Team-Games/Pet-spoon :3
 # Pet-spoon
 Pet Spoon sim C++ real 2027
 ## C++ Version Credits
